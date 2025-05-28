@@ -74,3 +74,4 @@ for (let y = 1; y <= 10; y++) {
   console.log(y);
   //code diatas akan dijalankan jika if diatas mereturn false
 }
+console.log("test");
