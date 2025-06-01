@@ -115,7 +115,7 @@ console.log($number.toFixed(3));
 //menggunakan built in method object math
 // lima pangkat dua
 console.log(Math.pow(5, 2));
-console.log(Math.PI)
+console.log(Math.PI);
 
 //date built in method
 const $date = new Date();
@@ -147,14 +147,14 @@ console.log(5 ** 5);
 
 //modify in place
 let x = 5;
-x +=10; // x = x + 10; // x = 5 + 10
+x += 10; // x = x + 10; // x = 5 + 10
 console.log(x);
 
 x -= 10;
 console.log(x);
 
 //concat atau penggabungan string
-console.log("HELLO" + "WORLD")
+console.log("HELLO" + "WORLD");
 let i = "HELLO";
 i += "WORLD";
 console.log(i);
