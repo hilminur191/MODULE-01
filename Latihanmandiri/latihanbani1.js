@@ -42,3 +42,20 @@ if (loginSukses) {
 // ===	Strict equality (sama persis)	Membandingkan nilai dan tipe data harus sama
 let number = 5;
 console.log(typeof number);
+//string built in method
+let text = "hello world";
+console.log(text.toUpperCase());
+console.log(text.replace("world", "bani"));
+console.log(text.split(" "));
+
+let text1 = "JavaScript";
+console.log(text1.slice(0, 5));
+
+let now = new Date();
+let jan01_1970 = new Date(0);
+let jan02_1970 = new Date(24 * 3600 * 1000);
+let date = new Date("2024-01-23");
+console.log(now);
+console.log(jan01_1970);
+console.log(jan02_1970);
+console.log(date);
