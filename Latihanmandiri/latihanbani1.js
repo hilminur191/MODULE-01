@@ -59,3 +59,13 @@ console.log(now);
 console.log(jan01_1970);
 console.log(jan02_1970);
 console.log(date);
+//////
+let age = 15;
+if (age >= 17) {
+  console.log("You can create an ID card");
+} else {
+  console.log("You are not old enough to create an ID card");
+}
+console.log(Boolean(0));
+console.log(Boolean("Hallo"));
+console.log(Boolean([]));

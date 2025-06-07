@@ -10,7 +10,7 @@ console.log(arearec);
 console.log(perimeter);
 
 //write a code to find diameter, circumference and area of a circle
-// radius = 5
+//radius = 5
 const radius = 5;
 const pi = Math.PI;
 
