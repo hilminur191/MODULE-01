@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfume Product Card</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2eae2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .card {
+        background-color: #ffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        max-width: 350px;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .card-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .category {
+        color: #444;
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        font-family: Georgia;
+      }
+
+      .description {
+        color: #444;
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+      }
+
+      .price-section {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .price {
+        color: #3d8168;
+        font-size: 32px;
+        font-family: Georgia;
+        font-weight: bold;
+      }
+
+      .old-price {
+        color: #444;
+        font-size: 13px;
+        text-decoration: line-through;
+      }
+
+      .add-button {
+        background-color: #3d8168;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        font-size: 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        gap: 0.5rem;
+      }
+
+      .add-button:hover {
+        background-color: #1a4032;
+      }
+
+      .icon {
+        font-size: 1rem;
+      }
+
+      /* media query untuk desktop */
+      @media (min-width: 768px) {
+        .card {
+          flex-direction: row;
+          max-width: 700px;
+          height: 450px; /* tinggi tetap, biar konsisten */
+        }
+
+        .card-image {
+          flex: 1;
+          height: 100%;
+        }
+
+        .card-image img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        .card-content {
+          flex: 1;
+          padding: 2rem;
+        }
+
+        .add-button {
+          width: auto;
+          padding: 0.75rem 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image">
+        <img src="perfume.png" alt="perfume product" />
+      </div>
+      <div class="card-content">
+        <div class="category">PERFUME</div>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <div class="description">
+          A floral, solar and valuptuous interpretation composed by Oliver
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </div>
+        <div class="price-section">
+          <span class="price">$149.99</span>
+          <span class="old-price">$169.99</span>
+        </div>
+        <div>
+          <button class="add-button">
+            <span class="icon">🛒</span>
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
